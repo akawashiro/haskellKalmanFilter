@@ -1,0 +1,15 @@
+Configuring haskell-kalman-filter-0.1.0.0...
+Warning: The 'license-file' field refers to the file 'LICENSE' which does not
+exist.
+Building haskell-kalman-filter-0.1.0.0...
+Preprocessing executable 'haskell-kalman-filter' for
+haskell-kalman-filter-0.1.0.0...
+[1 of 1] Compiling Main             ( Main.hs, dist/dist-sandbox-c4671a53/build/haskell-kalman-filter/haskell-kalman-filter-tmp/Main.o )
+
+Main.hs:34:1:
+    Non type-variable argument in the constraint: Distribution Normal a
+    (Use FlexibleContexts to permit this)
+    When checking that ‘gaussianNoises’ has the inferred type
+      gaussianNoises :: forall (m :: * -> *) a.
+                        (Distribution Normal a, MonadRandom m) =>
+                        a -> a -> Int -> m [a]

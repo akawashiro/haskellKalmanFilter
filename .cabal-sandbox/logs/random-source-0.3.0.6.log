@@ -1,0 +1,106 @@
+Configuring random-source-0.3.0.6...
+Building random-source-0.3.0.6...
+Preprocessing library random-source-0.3.0.6...
+[ 1 of 11] Compiling Data.Random.Source.Internal.Prim ( src/Data/Random/Source/Internal/Prim.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source/Internal/Prim.o )
+[ 2 of 11] Compiling Data.Random.Internal.Words ( src/Data/Random/Internal/Words.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Internal/Words.o )
+[ 3 of 11] Compiling Data.Random.Internal.Source ( src/Data/Random/Internal/Source.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Internal/Source.o )
+[ 4 of 11] Compiling Data.Random.Source.Internal.TH ( src/Data/Random/Source/Internal/TH.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source/Internal/TH.o )
+
+src/Data/Random/Source/Internal/TH.hs:85:1: Warning:
+    Defined but not used: ‘requireMethod’
+
+src/Data/Random/Source/Internal/TH.hs:93:1: Warning:
+    Defined but not used: ‘score’
+
+src/Data/Random/Source/Internal/TH.hs:104:1: Warning:
+    Defined but not used: ‘inline’
+
+src/Data/Random/Source/Internal/TH.hs:107:1: Warning:
+    Defined but not used: ‘noinline’
+
+src/Data/Random/Source/Internal/TH.hs:110:1: Warning:
+    Defined but not used: ‘replaceMethodName’
+[ 5 of 11] Compiling Data.Random.Source.PureMT ( src/Data/Random/Source/PureMT.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source/PureMT.o )
+[ 6 of 11] Compiling Data.Random.Source.Std ( src/Data/Random/Source/Std.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source/Std.o )
+[ 7 of 11] Compiling Data.Random.Source.StdGen ( src/Data/Random/Source/StdGen.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source/StdGen.o )
+
+src/Data/Random/Source/StdGen.hs:90:1: Warning:
+    RULE left-hand side too complicated to desugar
+      Optimised lhs: let {
+                       $dApplicative_aMkH :: Applicative m
+                       [LclId, Str=DmdType]
+                       $dApplicative_aMkH = GHC.Base.$p1Monad @ m $dMonad_aL3A } in
+                     let {
+                       $dFunctor_aMkI :: Functor m
+                       [LclId, Str=DmdType]
+                       $dFunctor_aMkI =
+                         GHC.Base.$p1Applicative @ m $dApplicative_aMkH } in
+                     getRandomPrimFromRandomGenState
+                       @ StdGen
+                       @ (StateT StdGen m)
+                       @ a
+                       $dRandomGen_aL3E
+                       (Control.Monad.State.Class.$fMonadStatesStateT0
+                          @ StdGen
+                          @ m
+                          (transformers-0.4.2.0:Control.Monad.Trans.State.Lazy.$fMonadStateT
+                             @ StdGen
+                             @ m
+                             (transformers-0.4.2.0:Control.Monad.Trans.State.Lazy.$fApplicativeStateT
+                                @ StdGen
+                                @ m
+                                (transformers-0.4.2.0:Control.Monad.Trans.State.Lazy.$fFunctorStateT
+                                   @ StdGen @ m $dFunctor_aMkI)
+                                $dFunctor_aMkI
+                                $dMonad_aL3A)
+                             $dMonad_aL3A)
+                          $dMonad_aL3A)
+      Orig lhs: let {
+                  $dApplicative_aMkH :: Applicative m
+                  [LclId, Str=DmdType]
+                  $dApplicative_aMkH = GHC.Base.$p1Monad @ m $dMonad_aL3A } in
+                let {
+                  $dFunctor_aMkI :: Functor m
+                  [LclId, Str=DmdType]
+                  $dFunctor_aMkI =
+                    GHC.Base.$p1Applicative @ m $dApplicative_aMkH } in
+                let {
+                  $dFunctor_aMkL :: Functor (StateT StdGen m)
+                  [LclId, Str=DmdType]
+                  $dFunctor_aMkL =
+                    transformers-0.4.2.0:Control.Monad.Trans.State.Lazy.$fFunctorStateT
+                      @ StdGen @ m $dFunctor_aMkI } in
+                let {
+                  $dApplicative_aMkK :: Applicative (StateT StdGen m)
+                  [LclId, Str=DmdType]
+                  $dApplicative_aMkK =
+                    transformers-0.4.2.0:Control.Monad.Trans.State.Lazy.$fApplicativeStateT
+                      @ StdGen @ m $dFunctor_aMkL $dFunctor_aMkI $dMonad_aL3A } in
+                let {
+                  $dMonad_aMkJ :: Monad (StateT StdGen m)
+                  [LclId, Str=DmdType]
+                  $dMonad_aMkJ =
+                    transformers-0.4.2.0:Control.Monad.Trans.State.Lazy.$fMonadStateT
+                      @ StdGen @ m $dApplicative_aMkK $dMonad_aL3A } in
+                let {
+                  $dMonadState_aL3F :: MonadState StdGen (StateT StdGen m)
+                  [LclId, Str=DmdType]
+                  $dMonadState_aL3F =
+                    Control.Monad.State.Class.$fMonadStatesStateT0
+                      @ StdGen @ m $dMonad_aMkJ $dMonad_aL3A } in
+                let {
+                  $dRandomGen_aL3E :: RandomGen StdGen
+                  [LclId, Str=DmdType]
+                  $dRandomGen_aL3E = System.Random.$fRandomGenStdGen } in
+                getRandomPrimFromRandomGenState
+                  @ StdGen @ (StateT StdGen m) @ a $dRandomGen_aL3E $dMonadState_aL3F
+[ 8 of 11] Compiling Data.Random.Source ( src/Data/Random/Source.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source.o )
+[ 9 of 11] Compiling Data.Random.Source.DevRandom ( src/Data/Random/Source/DevRandom.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source/DevRandom.o )
+[10 of 11] Compiling Data.Random.Source.IO ( src/Data/Random/Source/IO.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source/IO.o )
+[11 of 11] Compiling Data.Random.Source.MWC ( src/Data/Random/Source/MWC.hs, dist/dist-sandbox-c4671a53/build/Data/Random/Source/MWC.o )
+In-place registering random-source-0.3.0.6...
+Creating package registration file:
+/tmp/pkgConf-random-source-0.3.021033187761597322404.6
+Installing library in
+/home/akira/haskell-kalman-filter/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/random-source-0.3.0.6-BlBa5k3OGkp77gQiYAQw9z
+Registering random-source-0.3.0.6...

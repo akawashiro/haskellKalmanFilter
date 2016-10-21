@@ -1,0 +1,38 @@
+Configuring math-functions-0.2.0.2...
+Building math-functions-0.2.0.2...
+Preprocessing library math-functions-0.2.0.2...
+[ 1 of 10] Compiling Numeric.Sum      ( Numeric/Sum.hs, dist/dist-sandbox-c4671a53/build/Numeric/Sum.o )
+
+Numeric/Sum.hs:59:1: Warning:
+    The import of ‘Data.Vector.Generic.Mutable’ is redundant
+      except perhaps to import instances from ‘Data.Vector.Generic.Mutable’
+    To import instances alone, use: import Data.Vector.Generic.Mutable()
+[ 2 of 10] Compiling Numeric.Polynomial.Chebyshev ( Numeric/Polynomial/Chebyshev.hs, dist/dist-sandbox-c4671a53/build/Numeric/Polynomial/Chebyshev.o )
+[ 3 of 10] Compiling Numeric.Polynomial ( Numeric/Polynomial.hs, dist/dist-sandbox-c4671a53/build/Numeric/Polynomial.o )
+[ 4 of 10] Compiling Numeric.MathFunctions.Comparison ( Numeric/MathFunctions/Comparison.hs, dist/dist-sandbox-c4671a53/build/Numeric/MathFunctions/Comparison.o )
+[ 5 of 10] Compiling Numeric.RootFinding ( Numeric/RootFinding.hs, dist/dist-sandbox-c4671a53/build/Numeric/RootFinding.o )
+
+Numeric/RootFinding.hs:22:1: Warning:
+    The import of ‘Applicative’
+    from module ‘Control.Applicative’ is redundant
+[ 6 of 10] Compiling Numeric.MathFunctions.Constants ( Numeric/MathFunctions/Constants.hs, dist/dist-sandbox-c4671a53/build/Numeric/MathFunctions/Constants.o )
+[ 7 of 10] Compiling Numeric.Series   ( Numeric/Series.hs, dist/dist-sandbox-c4671a53/build/Numeric/Series.o )
+[ 8 of 10] Compiling Numeric.SpecFunctions.Internal ( Numeric/SpecFunctions/Internal.hs, dist/dist-sandbox-c4671a53/build/Numeric/SpecFunctions/Internal.o )
+
+Numeric/SpecFunctions/Internal.hs:14:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Numeric/SpecFunctions/Internal.hs:17:1: Warning:
+    The import of ‘Data.Word’ is redundant
+      except perhaps to import instances from ‘Data.Word’
+    To import instances alone, use: import Data.Word()
+[ 9 of 10] Compiling Numeric.SpecFunctions ( Numeric/SpecFunctions.hs, dist/dist-sandbox-c4671a53/build/Numeric/SpecFunctions.o )
+[10 of 10] Compiling Numeric.SpecFunctions.Extra ( Numeric/SpecFunctions/Extra.hs, dist/dist-sandbox-c4671a53/build/Numeric/SpecFunctions/Extra.o )
+In-place registering math-functions-0.2.0.2...
+Creating package registration file:
+/tmp/pkgConf-math-functions-0.2.02147469841438792350.2
+Installing library in
+/home/akira/haskell-kalman-filter/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/math-functions-0.2.0.2-6I69PCndmS77h7kJTqo8kB
+Registering math-functions-0.2.0.2...
