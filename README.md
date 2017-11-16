@@ -1,4 +1,4 @@
-# haskell-kalman-filter  
+# haskellKalmanFilter  
 This is an implementation of kalman filter using haskell.  
 This program predict the pos and velocity of tram.  
 Please check the wikipedia page of kalman filter for detail.  
